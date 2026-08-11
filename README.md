@@ -37,7 +37,8 @@ Built a fully interactive dashboard (with matching Dark and Light theme versions
 **Takeaway**: these factors likely overlap. New, price-sensitive, month-to-month customers paying by electronic check represent the highest-risk segment for targeted retention efforts.
 
 ## 🖼️ Dashboard Preview
-
+![Dark Theme Dashboard](Dashboard-Dark.png)
+![Light Theme Dashboard](Dashboard-light.png)
 
 
 ## 🔜 Next Steps
