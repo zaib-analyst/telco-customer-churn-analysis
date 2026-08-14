@@ -41,16 +41,39 @@ Built a fully interactive dashboard (with matching Dark and Light theme versions
 ![Light Theme Dashboard](Dashboard-light.png)
 
 
-## 🔜 Next Steps
-
-- [ ] Power BI dashboard (native DAX measures, cross-filtering visuals)
-- [ ] SQL analysis (querying, aggregations, window functions)
-- [ ] Python analysis (pandas, statistical deep-dive, visualization)
 
 ## 🛠️ Tools Used
 
 `Excel` · `PivotTables` · `PivotCharts` · `Slicers` · Formulas: `IFERROR`, `COUNTIFS`, `SUMIFS`, `AVERAGEIFS`, `GETPIVOTDATA`
 
+## Power BI Phase
+
+Following the Excel phase, the same cleaned Telco Churn dataset was rebuilt natively in Power BI to practice the full BI toolkit: Power Query, Data Modeling, and DAX.
+
+### Data Preparation (Power Query)
+- Verified cleaned data from Excel (SeniorCitizen Yes/No, TotalCharges blanks) carried through with zero issues.
+- Built a new `TenureGroup` column using Conditional Column logic, bucketing tenure into 12-month intervals (0-11 through 60-72 months) to match the Excel dashboard's grouping.
+
+### DAX Measures
+- `Churn Rate` — CALCULATE-based percentage of churned customers.
+- `Avg Tenure Churned` — average tenure among churned customers only.
+- `Monthly Revenue Lost` — sum of MonthlyCharges among churned customers only.
+
+### Dashboard
+- 5 KPI cards: Total Customers, Churned Customers, Churn Rate, Avg Tenure Churned, Monthly Revenue Lost.
+- 5 charts: Churn by Contract Type, Churn by Tenure, Churn by Internet Service, Average MonthlyCharges by Internet Service (pricing-sensitivity support), Churn by Payment Method.
+- 4 interactive slicers: Contract, Internet Service, Gender, Senior Citizen.
+- Custom dark theme applied globally via Power BI's theme system.
+
+![Power BI Dashboard](Telco-CustomerChurn-Pbi.png)
+
+### Validation
+All figures were independently verified against the original Excel analysis, with exact matches across every KPI and chart (e.g., 42.71% Month-to-month churn, $91.50 avg Fiber optic monthly charge).
+
+### Next Steps
+- SQL phase (querying, aggregations, joins, window functions)
+- Python phase (pandas-based statistical analysis)
+
 ---
 
-📫 Connect with me on [LinkedIn](#) — feedback and suggestions welcome!
+📫 Connect with me on [LinkedIn](linkedin.com/in/ali-zaib-6aa913388) — feedback and suggestions welcome!
