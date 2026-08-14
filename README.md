@@ -65,7 +65,7 @@ Following the Excel phase, the same cleaned Telco Churn dataset was rebuilt nati
 - 4 interactive slicers: Contract, Internet Service, Gender, Senior Citizen.
 - Custom dark theme applied globally via Power BI's theme system.
 
-![Power BI Dashboard](Telco-CustomerChurn-Pbi.png)
+![Power BI Dashboard](Telco-CustomerChurn-Pbi)
 
 ### Validation
 All figures were independently verified against the original Excel analysis, with exact matches across every KPI and chart (e.g., 42.71% Month-to-month churn, $91.50 avg Fiber optic monthly charge).
